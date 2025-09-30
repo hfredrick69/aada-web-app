@@ -95,32 +95,62 @@ function Dashboard() {
         )}
 
         {activeTab === 'quizzes' && (
-          <div className="coming-soon-section">
-            <svg viewBox="0 0 24 24" fill="currentColor" style={{ width: '64px', height: '64px', color: '#ffc107' }}>
-              <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
-            </svg>
-            <h3>Quizzes</h3>
-            <p>Coming Soon</p>
+          <div className="content-section">
+            <div className="quiz-card" style={{ backgroundColor: '#f5f5f5' }}>
+              <h4>Dental Anatomy Quiz</h4>
+              <p>Status: Not Started</p>
+            </div>
+            <div className="quiz-card" style={{ backgroundColor: '#ffecb3' }}>
+              <h4>Chairside Assisting Quiz</h4>
+              <p>Status: In Progress</p>
+            </div>
+            <div className="quiz-card" style={{ backgroundColor: '#c8e6c9' }}>
+              <h4>OSHA Guidelines Quiz</h4>
+              <p>Status: Completed • Score: 90%</p>
+            </div>
           </div>
         )}
 
         {activeTab === 'jobs' && (
-          <div className="coming-soon-section">
-            <svg viewBox="0 0 24 24" fill="currentColor" style={{ width: '64px', height: '64px', color: '#ffc107' }}>
-              <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
-            </svg>
-            <h3>Job Board</h3>
-            <p>Coming Soon</p>
+          <div className="content-section">
+            <div className="job-card">
+              <div className="job-info">
+                <h4>Dental Assistant – Smile Dental</h4>
+                <p>Atlanta, GA</p>
+              </div>
+              <button className="apply-button">Apply</button>
+            </div>
+            <div className="job-card">
+              <div className="job-info">
+                <h4>Sterilization Tech – Tooth & Co.</h4>
+                <p>Marietta, GA</p>
+              </div>
+              <button className="apply-button">Apply</button>
+            </div>
+            <div className="job-card">
+              <div className="job-info">
+                <h4>Front Desk Admin – Clear Dental</h4>
+                <p>Kennesaw, GA</p>
+              </div>
+              <button className="apply-button">Apply</button>
+            </div>
           </div>
         )}
 
         {activeTab === 'tuition' && (
-          <div className="coming-soon-section">
-            <svg viewBox="0 0 24 24" fill="currentColor" style={{ width: '64px', height: '64px', color: '#ffc107' }}>
-              <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
-            </svg>
-            <h3>My Tuition</h3>
-            <p>Coming Soon</p>
+          <div className="content-section">
+            <div className="tuition-card" style={{ backgroundColor: '#ef5350' }}>
+              <h4>Past Due</h4>
+              <p>$400 due on June 15</p>
+            </div>
+            <div className="tuition-card" style={{ backgroundColor: '#81c784' }}>
+              <h4>Upcoming</h4>
+              <p>$500 due on July 10</p>
+            </div>
+            <div className="tuition-card" style={{ backgroundColor: '#bbdefb' }}>
+              <h4>Tuition Balance</h4>
+              <p>$2,100 remaining</p>
+            </div>
           </div>
         )}
       </div>

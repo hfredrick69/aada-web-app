@@ -229,24 +229,69 @@
   color: #666;
 }
 
-.coming-soon-section {
+.content-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 24px;
-  text-align: center;
+  gap: 12px;
 }
 
-.coming-soon-section h3 {
-  margin: 16px 0 8px 0;
-  font-size: 24px;
+.quiz-card,
+.job-card,
+.tuition-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.quiz-card h4,
+.tuition-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
   font-weight: 600;
   color: #333;
 }
 
-.coming-soon-section p {
+.quiz-card p,
+.tuition-card p {
   margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.job-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-info h4 {
+  margin: 0 0 4px 0;
   font-size: 16px;
-  color: #999;
+  font-weight: 600;
+  color: #333;
+}
+
+.job-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.apply-button {
+  background: #ffc107;
+  color: #000;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.apply-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 12px rgba(255, 193, 7, 0.3);
 }
